@@ -8,40 +8,36 @@ function addTodo(){
     console.log(todoText);
 
     const todoObject={
-        id:counter,
+        id:todoList.length*2,
         todoText:todoText,
         isDone:false
     };
 
     todoList.push(todoObject);
+    displayTodos()
 
 }
 
 function doneTode(todoId){
     const selectedTodoId=todoList.findIndex(todo=>todo.id==todoId);
 
-    todoList[selectedTodoId]
+    todoList[selectedTodoId].isDone=true;
 
 
+}
+
+function displayTodos(){
+    todoList.forEach(todo=>{
+        const todoElement=document.createElement("li");
+        todoElement.dataset.id="deneme";
+        if(item.isDone){
+            todoElement.classList.add("checked")
+        }
+        todoElement.addEventListener()
+        todoListEl.appendChild(todoElement)
+    })
 }
 
 
 
 
-// [
-//     {   id:0,
-//         todoText:"Eve gideceğim",
-//         isDone:false
-//     },
-//     {
-//         id:1,
-//         todoText:"Çöpler toparlanacak",
-//         isDone:
-//     },
-//     {
-//         id:2,
-//         todoText:"Köpeği gezdirecek",
-
-//     }
-
-// ]
