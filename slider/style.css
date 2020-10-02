@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-pocket{
+    border: 2px solid black;
+    width: 600px;
+    height: 400px;
+}
+.lesson-body{
+    border: 1px solid black;
+    width: 600px;
+    height: 100px;
+}
+img{
+    width: 600px;
+    height: 400px;
+}
+.btn{
+    cursor: pointer;
+}
